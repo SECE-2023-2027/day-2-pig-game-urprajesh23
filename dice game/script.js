@@ -11,7 +11,7 @@ const reset = document.getElementById("reset");
 
 rollButton.addEventListener("click", () => {
   randomNumber = Math.floor(Math.random() * 6) + 1;
-  image.src = `/roll a dice/dice/dice${randomNumber}.jpg `;
+  image.src = `dice${randomNumber}.jpg `;
   if (scorePlayer1 >= 100) {
     alert("player1 wins");
   }
