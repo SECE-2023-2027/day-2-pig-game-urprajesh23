@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dice Game</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <div class="game">
-    <div class="player player--0 player--active">
-      <h2>Player 1</h2>
-      <p class="score" id="score--0">0</p>
-      <div class="current">
-        <p>Current</p>
-        <p id="current--0">0</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="/roll a dice/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/roll a dice/app.js" defer></script>
+  </head>
+  <body>
+    <div class="game" id="game">
+      <button class="btn new-game" id="reset">NEW GAME</button>
+
+      <div class="player player-1">
+        <h2>PLAYER 1</h2>
+        <p class="score" id="scoreplayer-1">0</p>
+        <div class="current-box">
+          <p>CURRENT</p>
+          <p class="current-score" id="currentplayer-1">0</p>
+        </div>
       </div>
-    </div>
 
-    <div class="player player--1">
-      <h2>Player 2</h2>
-      <p class="score" id="score--1">0</p>
-      <div class="current">
-        <p>Current</p>
-        <p id="current--1">0</p>
+      <div class="player player-2">
+        <h2>PLAYER 2</h2>
+        <p class="score" id="scoreplayer-2">0</p>
+        <div class="current-box">
+          <p>CURRENT</p>
+          <p class="current-score" id="currentplayer-2">0</p>
+        </div>
       </div>
+
+      <img
+        src="/roll a dice/dice/dice1.jpg "
+        id="dice"
+        alt="Dice"
+        class="dice"
+      />
+
+      <button class="btn roll-dice" id="rollButton">ROLL DICE</button>
+      <button class="btn hold" id="holdButton">HOLD</button>
     </div>
-
-    <img src="dice-1.jpg" alt="Dice" class="dice" id="dice" />
-
-    <button class="btn" id="btn--new">🔄 New Game</button>
-    <button class="btn" id="btn--roll">🎲 Roll Dice</button>
-    <button class="btn" id="btn--hold">📥 Hold</button>
-  </div>
-  <script src="script.js"></script>
-</body>
+  </body>
 </html>
